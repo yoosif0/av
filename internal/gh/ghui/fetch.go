@@ -47,6 +47,8 @@ type GitHubFetchProgress struct {
 	mergeCommitPropagationIsDone bool
 }
 
+
+
 type GitHubFetchDone struct{}
 
 type GitHubFetchModel struct {
@@ -98,6 +100,10 @@ func (vm *GitHubFetchModel) Update(msg tea.Msg) (*GitHubFetchModel, tea.Cmd) {
 		return vm, cmd
 	}
 	return vm, nil
+}
+
+type Viewer interface {
+    View() string
 }
 
 func (vm *GitHubFetchModel) View() string {

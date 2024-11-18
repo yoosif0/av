@@ -1,0 +1,7 @@
+packages:
+  github.com/aviator-co/av/internal/gh/ghui:
+    interfaces:
+      Viewer:
+  github.com/go-git/go-git/v5:
+    interfaces:
+      git.Repository:
